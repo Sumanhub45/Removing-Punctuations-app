@@ -1,17 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Text Utils</title>
 </head>
+
 <body>
-<h1>Welcome to the text analyzer. Enter your text below</h1>
-<form action='/about' method='get'>
-    <textarea name='text' style='margin: 0px; width: 721px; height: 93px;'></textarea><br>
+    <h1>Welcome to the text analyzer. Enter your text below</h1><br>
+    <label>Remove Punctuations--'''!()-[]{};:'"\,<>./?@#$%^&*_~'''</label><br><br>
+    <form action='/about' method='get'>
+        <textarea name='text' style='margin: 0px; width: 721px; height: 93px;'></textarea><br>
+        
+        <input type="checkbox" name="removepunc"> Remove Punctuations(suman)<br>
+        <button type='submit'> Analyze Text</button>
 
-    <input type="checkbox" name="removepunc"> Remove Punctuations(suman)<br>
-    <button type='submit'> Analyze Text</button>
-
-</form>
+    </form>
 </body>
+
 </html>
